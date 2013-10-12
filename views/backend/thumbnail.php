@@ -172,15 +172,9 @@
 				<td class="help"><?php echo __(''); ?></strong></td>
 			</tr>
 		</table>
-	<?php if($at1 == null): ?>
 	<p class="buttons">
         <input class="button" name="commit" type="submit" accesskey="s" value="<?php echo __('Add new thumbnail'); ?>" />
     </p>
-	<?php elseif($at1 != null): ?>
-	<p class="buttons">
-        <input class="button" name="commit" type="submit" accesskey="s" value="<?php echo __('Save changes'); ?>" />
-    </p>
-	<?php endif; ?>
 </form>
 <script type="text/javascript">
 // <![CDATA[
