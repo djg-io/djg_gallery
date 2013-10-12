@@ -1,0 +1,42 @@
+/* assets */
+@import url("assets/colorbox/themes/simple_dark/colorbox.css");
+@import url("assets/UI/jquery-ui-1.8.18.custom.css");
+@import url("css/backend/editpage.css");
+
+/* tables */
+#djg_table {width: 100%;}
+#djg_table td { background: none; cursor: default; padding: 5px 0;}
+#djg_table thead td { background-color: #414551; color: #fff; font-size: 1em;}
+#djg_table tr.odd td { background-color: #eee; }
+#djg_table tr.even td { background-color: #ddd; }
+#djg_table tbody tr:hover td{background-color: #bec5cc;}
+
+
+/* view/backend/files 
+#djg_gallery_files { }
+#djg_gallery_files li { margin: 4px; padding:5px; float: left; width: 80px; background: #000;  border:none;}
+#djg_gallery_files li a {float: right; }
+#djg_gallery_files li img {cursor: move; }*/
+.file_counter {padding-right:20px; margin-right:10px; background: url(images/ajax.gif) no-repeat center right; display: none;}
+
+/* view/backend/files - uploadify */
+#custom-demo .uploadifyQueueItem {
+  background-color: #fff; border: none;
+  border-bottom: 1px solid #E5E5E5;
+  margin: 10px 0;
+}
+#custom-demo .uploadifyError {}
+#custom-demo .uploadifyQueueItem .cancel {float: right;}
+#custom-demo .uploadifyQueue .completed {color: #C5C5C5;}
+#custom-demo .uploadifyProgress {background-color: #E5E5E5; margin-top: 10px;}
+#custom-demo .uploadifyProgressBar { background-color: #0099FF; height: 3px; width: 1px;}
+#custom-demo .uploadifyQueue{overflow: auto; height: 300px; margin: 10px 0; }
+.upload_window { height: 400px; width: 600px; padding:10px; margin:0; border: 1px solid #ccc; background-color: #fff;}
+
+/* tmp */
+#ajax_debug {
+	display: block;
+	padding: 10px; margin-bottom: 20px;
+	border: 1px solid #333;
+	background-color: #efefef;
+}

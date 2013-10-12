@@ -1,0 +1,16 @@
+.global_title_save_button, .global_description_save_button {cursor:pointer; }
+span.switchView {display:inline-block; background-image: url('../../images/32_grid_list.png'); width: 64px; height:32px; cursor: pointer;}
+#djg_gallery_editpage .row{width: 20%; background-color: red;}
+#djg_gallery_files.view,#djg_gallery_files.grid { list-style-type: none; margin: 0; padding: 5px 0 0 0;}
+#djg_gallery_files.view li{ background-color: #333333; color: #ffffff; margin: 0 5px 5px 0; padding: 5px; vertical-align:top; word-wrap:break-word; width: 80px; height: 80px; position: relative; z-index:0; float:left;}
+#djg_gallery_files.grid li { background-color: #333333; color: #ffffff; margin: 0 5px 5px 0; padding: 5px; position: relative; }
+#djg_gallery_files.view .pic .icons, #djg_gallery_files.grid .pic .icons{ display: none; padding: 0px 0px 0px 5px; position: absolute; z-index:1; top:5px; right:5px; background-color: #333333; zoom:1; }
+.pic .icons .del_pic{ background: url('../../images/16_delete.png') no-repeat 0 0; display:inline-block; width:18px; height:18px; cursor: pointer; }
+.pic .icons .link_colorbox{ background: url('../../images/16_zoom.png') no-repeat 0 0; display:inline-block; width:18px; height:18px; cursor: pointer; }
+#djg_gallery_files.view .desc .title {}
+#djg_gallery_files.grid .desc {left: 95px; top: 5px; margin:0; padding:0; }
+#djg_gallery_files.grid .desc .title { font-size:1.4em; margin-bottom: 5px; }
+#djg_gallery_files.view .desc { display: none; }
+#djg_gallery_files.grid .desc .description{ font-size:0.9em; }
+#djg_gallery_files.view .pic img {width: 80px; height:80px; cursor: move;}
+#djg_gallery_files.grid img {float: left; width: 80px; height:80px; cursor: move; margin-right: 10px;}

@@ -1,0 +1,29 @@
+/*
+    www.kreacjawww.pl 2012
+*/
+/* ! theme pager  */
+/* --------------------------------------------------------------------------------- 
+ */
+p.pager {margin:20px 0;}
+p.pager .current{background-color:darkgreen;color:#fff;}
+p.pager *{background-color:lightgreen; padding:2px 6px;font-size: 1.2em;}
+p.pager a{color:darkgreen; text-decoration:none;}
+/* ! theme dispalyThemeGallery  */
+/* --------------------------------------------------------------------------------- 
+ */
+ul.gallery {padding:0; margin:0; }
+
+ul.gallery li {display: inline-table; margin:0; padding:0;}
+ul.gallery li img {margin: 0; padding: 0;}
+ul.gallery li img:hover {}
+/* ! theme dispalyThemeAlbums  */
+/* --------------------------------------------------------------------------------- 
+ */
+ul.djg_gallery_albums {padding:10px; margin:0;}
+ul.djg_gallery_albums li{display: block; margin:10px 0; }
+ul.djg_gallery_albums li img {float:left; margin-right:20px; padding:3px; border: 1px solid #d3e1c7; }
+ul.djg_gallery_albums li img:hover {border: 1px solid green;}
+/* ! theme jCarouselLite  */
+/* --------------------------------------------------------------------------------- 
+ */
+ ul#carousel li a * {border:none; margin:0;padding:0;}
