@@ -1,11 +1,17 @@
-== DJG_GELLRY WOLFCMS PLUGIN INFORMATION ==
+djg_gallery
+===========
 
+Advanced gallery for WolfCMS.
 version: 0.1
 
 == FUNCTIONALITY ==
 
+- page as gallery
 - multiupload
-- 
+- drag drop sortable files
+- tumbnails (resize, crop, watermarks) 
+- display albums, gallery, carousel
+- download gallery as zip file
 
 == HOW TO USE ==
 
