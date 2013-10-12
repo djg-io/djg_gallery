@@ -12,6 +12,13 @@ version: 0.1
 - tumbnails (resize, crop, watermarks) 
 - display albums, gallery, carousel
 - download gallery as zip file
+- page as gallery
+- multiupload
+- drag drop sortable files
+- tumbnails (resize, crop, watermarks) 
+- display albums, gallery, carousel
+- download gallery as zip file
+- edit title and description of file pn fly (jquery.jeditable.js by Mika Tuupola, Dylan Verheul)
 
 == HOW TO USE ==
 
@@ -38,3 +45,6 @@ Bremen by pc.de: http://www.iconfinder.com/icondetails/59399/32/project_icon (mo
 PHP: BC Math
 PHP GD lib
 PHP 5.3.x
+
+== TO DO ==
+clean up the code
