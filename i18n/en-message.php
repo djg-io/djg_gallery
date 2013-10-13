@@ -27,7 +27,7 @@ return array(
 'Successfully installed plugin.' => 'Successfully installed plugin.', 
 /** index.php */ 
 '[djg] Gallery' => '[djg] Gallery', 
-'Galleria and portfolio in one.' => 'Galleria and portfolio in one.', 
+'Gallery and portfolio in one.' => 'Gallery and portfolio in one.', 
 'Gallery option' => 'Gallery option', 
 'None' => 'None', 
 'Album' => 'Album', 

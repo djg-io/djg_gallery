@@ -2,7 +2,7 @@
 Plugin::setInfos(array(
 	'id'			=>	'djg_gallery',
 	'title'			=>	__('[djg] Gallery'),
-	'description'   =>	__('Galleria and portfolio in one.'),
+	'description'   =>	__('Gallery and portfolio in one.'),
 	'license'		=>	'MIT',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',

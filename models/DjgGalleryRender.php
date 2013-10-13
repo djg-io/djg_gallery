@@ -45,7 +45,7 @@ class Djggalleryrender {
 		if($pager==true):
 			use_helper('Pager');
 			$pager = new Pager(array('style' => 'punbb','items_per_page' => self::ItemsPerPage,'total_items' => count(self::getPicsArray($pageId))));
-			self::dispalyThemeGallery(self::getPicsArray(array('pageId'=>$pageId,'limit' => $pager->items_per_page, 'offset' => $pager->sql_offset)),"djg_gallery_gallery");
+			self::dispalyThemeGallery(self::getPicsArray(array('pageId'=>$pageId,'limit' => $pager->items_per_page, 'offset' => $pager->sql_offset)),"djg_gallery_g");
 			echo $pager;
 		else:
 			self::dispalyThemeGallery(self::getPicsArray($pageId,"djg_gallery"),"djg_gallery_g");
@@ -59,26 +59,18 @@ class Djggalleryrender {
 	{
 		$path = "public/djg_gallery/";
 		$pageId = (is_object($page)) ? $page->id() : $page;
-		echo '<ul class="djg_gallery_a">';
-		foreach(Page::findById($pageId)->children(array('order'=>'page.created_on DESC', 'where'=>'page.djg_gallery = 2')) as $menu):
-			$val = self::getPicByPageId($menu->id());
+		foreach(Page::findById($pageId)->children() as $menu):
 			if(self::countPics($menu->id())):
-				echo '<li>';
-				echo '<a href="' . $menu->url() . '" title="'.$val[0]['title'].'">';
-				echo '<img src="' . URL_PUBLIC . Djggallery::THUMBS_PATH . self::GalleryThumbName . $val[0]['filename'] . '.' . $val[0]['fileext'] . '" alt="'.$val[0]['title'].'" title="'.$val[0]['title'].'" />';
-				echo '<span class="album_title">zdjęć: ' . self::countPics($menu->id()) . '</span>';
+				$val = self::getPicByPageId($menu->id());				
+				echo "<li>";
+				echo '<a href="' . $menu->url() . '">';
+				echo '<img src="' . URL_PUBLIC . Djggallery::THUMBS_PATH . self::GalleryThumbName . $val[0]['filename'] . '.' . $val[0]['fileext'] . '" alt="'.$val['title'].'" />';
+				echo '<span class="album_title">' . $menu->slug() . ' (' . self::countPics($menu->id()) . ')</span>';
 				echo '</a>';
-				echo '</li>';
-			else:
-				echo '<li>';
-				echo '<a href="' . $menu->url() . '" >';
-				echo '<img style="display:block; width:145px; height:145px; background-color: red; " />';
-				echo '<span class="album_title">zdjęć: ' . self::countPics($menu->id()) . '</span>';
-				echo '</a>';
-				echo '</li>';
+				echo "</li>";
+
 			endif;	
 		endforeach;
-		echo '</ul>';
 	}
 	/* 
 	* method: getPicsArray
@@ -130,11 +122,6 @@ class Djggalleryrender {
 		endforeach;
 		echo '</ul>';
 	}
-	
-
-	
-	
-	
 	/* 
 	* method: getPicsArray
 	* parametr: items:Array(itemId, limit, offset)
