@@ -11,7 +11,7 @@
 			<tr>
 				<td class="label"><?php echo __('Quality'); ?></td>
 				<td class="field">
-					<input type="number" min="20" max="100" step="10" class="textbox" name="djg_gallery[quality]" value="<?php echo (isset($djg_gallery['quality']))?$djg_gallery['quality']:'80'; ?>"  />
+					<input type="number" min="20" max="100" step="5" class="textbox" name="djg_gallery[quality]" value="<?php echo (isset($djg_gallery['quality']))?$djg_gallery['quality']:'80'; ?>"  />
 				</td>
 				<td class="help"><?php echo __('Set quality of file (20-100)'); ?></strong></td>
 			</tr>
@@ -78,17 +78,17 @@
 				<?php if(empty($djg_gallery['watermark'][1])) $djg_gallery['watermark'][1] = 'MC'; ?>
 				<td class="label"><?php echo __('Watermark alignment'); ?></td>
 				<td class="field">
-					<input type="radio" name="djg_gallery[watermark][1]" value="TL" <?php if ($djg_gallery['watermark']['watermark_position']=='TL') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="TC" <?php if ($djg_gallery['watermark']['watermark_position']=='TC') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="TR" <?php if ($djg_gallery['watermark']['watermark_position']=='TR') echo 'checked'; ?>>						
+					<input type="radio" name="djg_gallery[watermark][1]" value="TL" <?php if ($djg_gallery['watermark'][1]=='TL') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="TC" <?php if ($djg_gallery['watermark'][1]=='TC') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="TR" <?php if ($djg_gallery['watermark'][1]=='TR') echo 'checked'; ?>>						
 					<br>
-					<input type="radio" name="djg_gallery[watermark][1]" value="ML" <?php if ($djg_gallery['watermark']['watermark_position']=='ML') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="MC" <?php if ($djg_gallery['watermark']['watermark_position']=='MC') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="MR" <?php if ($djg_gallery['watermark']['watermark_position']=='MR') echo 'checked'; ?>>						
+					<input type="radio" name="djg_gallery[watermark][1]" value="ML" <?php if ($djg_gallery['watermark'][1]=='ML') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="MC" <?php if ($djg_gallery['watermark'][1]=='MC') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="MR" <?php if ($djg_gallery['watermark'][1]=='MR') echo 'checked'; ?>>						
 					<br>	
-					<input type="radio" name="djg_gallery[watermark][1]" value="BL" <?php if ($djg_gallery['watermark']['watermark_position']=='BL') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="BC" <?php if ($djg_gallery['watermark']['watermark_position']=='BC') echo 'checked'; ?>>
-					<input type="radio" name="djg_gallery[watermark][1]" value="BR" <?php if ($djg_gallery['watermark']['watermark_position']=='BR') echo 'checked'; ?>>											
+					<input type="radio" name="djg_gallery[watermark][1]" value="BL" <?php if ($djg_gallery['watermark'][1]=='BL') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="BC" <?php if ($djg_gallery['watermark'][1]=='BC') echo 'checked'; ?>>
+					<input type="radio" name="djg_gallery[watermark][1]" value="BR" <?php if ($djg_gallery['watermark'][1]=='BR') echo 'checked'; ?>>											
 				</td>
 				<td class="help"><?php echo __('Set position of watermark on picture'); ?></strong></td>
 			</tr>
@@ -96,7 +96,7 @@
 				<?php if(empty($djg_gallery['watermark']['opacity'])) $djg_gallery['watermark'][2] = '90'; ?>
 				<td class="label"><?php echo __('Watermark opacity in %'); ?></td>
 				<td class="field">
-					<input type="number" min="10" max="100" step="10" class="textbox" maxlength="3" name="djg_gallery[watermark][2]" value="<?php echo (isset($djg_gallery['watermark'][2]))?$djg_gallery['watermark'][2]:'100'; ?>"  />
+					<input type="number" min="10" max="100" step="5" class="textbox" maxlength="3" name="djg_gallery[watermark][2]" value="<?php echo (isset($djg_gallery['watermark'][2]))?$djg_gallery['watermark'][2]:'100'; ?>"  />
 				</td>
 				<td class="help"><?php echo __(''); ?></strong></td>
 			</tr>
