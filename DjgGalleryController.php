@@ -94,7 +94,9 @@ class DjgGalleryController extends PluginController {
 
 	public function move_files($page=NULL) 
 	{
-		if( ((int)$_POST['fromId']!=0) and ((int)$_POST['toId']!=0)): 
+		$fromId = (!empty($_POST['fromId'])) ? (int)$_POST['fromId'] : 0;
+		$toId = (!empty($_POST['toId'])) ? (int)$_POST['toId'] : 0;
+		if( ( $fromId != 0 ) && ( $toId != 0 )): 
 			$result = Djggallery::moveFiles($_POST);
 			if($result==1) Flash::set('success', __('All files moved'));
 			else Flash::set('error', $result);

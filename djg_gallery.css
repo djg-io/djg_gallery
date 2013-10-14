@@ -1,7 +1,3 @@
-/** sidebar */
-.kreacjawww {background-color: #fff;  padding: 4px;}
-.kreacjawww span {background: url('images/16_poland.png') no-repeat left center; padding-left: 20px;}
-
 /** assets */
 @import url("assets/colorbox/themes/simple_dark/colorbox.css");
 @import url("assets/UI/jquery-ui-1.8.18.custom.css");
@@ -44,3 +40,7 @@
 	border: 1px solid #333;
 	background-color: #efefef;
 }
+
+/** sidebar */
+.kreacjawww {background-color: #fff;  padding: 4px;}
+.kreacjawww span {background: url('images/16_poland.png') no-repeat left center; padding-left: 20px;}
