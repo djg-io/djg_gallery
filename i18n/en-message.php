@@ -70,6 +70,8 @@ return array(
 'Back to thumbnails' => 'Back to thumbnails', 
 'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.' => 'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.', 
 /** views\backend\move_files.php */ 
+'Pages are same, nothing to do.' => 'Pages are same, nothing to do.',
+'Set both pages, nothing to do.' => 'Set both pages, nothing to do.',
 'Move files to another page' => 'Move files to another page', 
 'Move from' => 'Move from', 
 '- chose page -' => '- chose page -', 

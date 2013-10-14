@@ -96,15 +96,22 @@ class DjgGalleryController extends PluginController {
 	{
 		$fromId = (!empty($_POST['fromId'])) ? (int)$_POST['fromId'] : 0;
 		$toId = (!empty($_POST['toId'])) ? (int)$_POST['toId'] : 0;
-		if( ( $fromId != 0 ) && ( $toId != 0 )): 
-			$result = Djggallery::moveFiles($_POST);
-			if($result==1) Flash::set('success', __('All files moved'));
-			else Flash::set('error', $result);
-			redirect(get_url('plugin/djg_gallery/move_files'));
-		else:
-			$pages = Page::find(array('order'=>'page.created_on DESC', 'where'=>'page.djg_gallery > 1'));
-			$this->display('djg_gallery/views/backend/move_files', array('pages' => $pages));
+		if($_POST):
+			if ( $fromId == $toId ):
+				Flash::set('info', __('Pages are same, nothing to do.'));
+				redirect(get_url('plugin/djg_gallery/move_files'));
+			elseif ( ( $fromId == 0 ) || ( $toId == 0 )):
+				Flash::set('info', __('Set both pages, nothing to do.'));
+				redirect(get_url('plugin/djg_gallery/move_files'));
+			else:
+				$result = Djggallery::moveFiles($_POST);
+				if($result==1) Flash::set('success', __('All files moved'));
+				else Flash::set('error', $result);
+				redirect(get_url('plugin/djg_gallery/move_files'));
+			endif;
 		endif;
+		$pages = Page::find(array('order'=>'page.created_on DESC', 'where'=>'page.djg_gallery > 1'));
+		$this->display('djg_gallery/views/backend/move_files', array('pages' => $pages));
 	}
 
 	public function settings($page=NULL) 
