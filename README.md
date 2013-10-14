@@ -2,7 +2,6 @@ djg_gallery
 ===========
 
 Advanced gallery for WolfCMS.
-version: 0.1
 
 == FUNCTIONALITY ==
 
@@ -12,7 +11,8 @@ version: 0.1
 - tumbnails (resize, crop, watermarks) 
 - display albums, gallery, carousel
 - download gallery as zip file
-- edit title and description of file pn fly (jquery.jeditable.js by Mika Tuupola, Dylan Verheul)
+- edit title and description of file on fly (jquery.jeditable.js by Mika Tuupola, Dylan Verheul)
+- colorbox fronted html5 compatible
 
 == HOW TO USE ==
 
@@ -36,9 +36,7 @@ Bremen by pc.de: http://www.iconfinder.com/icondetails/59399/32/project_icon (mo
 
 == REQUIRES ==
 
-PHP: BC Math
-PHP GD lib
-PHP 5.3.x
+PHP: BC Math, GD lib, 5.3.x
 
 == TO DO ==
 clean up the code

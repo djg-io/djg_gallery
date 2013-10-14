@@ -1,9 +1,13 @@
-/* assets */
+/** sidebar */
+.kreacjawww {background-color: #fff;  padding: 4px;}
+.kreacjawww span {background: url('images/16_poland.png') no-repeat left center; padding-left: 20px;}
+
+/** assets */
 @import url("assets/colorbox/themes/simple_dark/colorbox.css");
 @import url("assets/UI/jquery-ui-1.8.18.custom.css");
 @import url("css/backend/editpage.css");
 
-/* tables */
+/** tables */
 #djg_table {width: 100%;}
 #djg_table td { background: none; cursor: default; padding: 5px 0;}
 #djg_table thead td { background-color: #414551; color: #fff; font-size: 1em;}

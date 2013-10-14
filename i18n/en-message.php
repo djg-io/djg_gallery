@@ -23,6 +23,8 @@ return array(
 'Thumbnail added.' => 'Thumbnail added.', 
 'Thumbnail changed.' => 'Thumbnail changed.', 
 'Gallery' => 'Gallery', 
+/** disable.php */ 
+'Some djg_gallery settings are stored in database.<br/>Click uninstall if you wish to delete them.' => 'Some djg_gallery settings are stored in database.<br/>Click uninstall if you wish to delete them.', 
 /** enable.php */ 
 'Successfully installed plugin.' => 'Successfully installed plugin.', 
 /** index.php */ 
