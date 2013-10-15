@@ -64,7 +64,7 @@ class Djggalleryrender {
 				$val = self::getPicByPageId($menu->id());				
 				echo "<li>";
 				echo '<a href="' . $menu->url() . '">';
-				echo '<img src="' . URL_PUBLIC . Djggallery::THUMBS_PATH . self::GalleryThumbName . $val[0]['filename'] . '.' . $val[0]['fileext'] . '" alt="'.$val['title'].'" />';
+				echo '<img src="' . URL_PUBLIC . Djggallery::THUMBS_PATH . self::GalleryThumbName . $val[0]['filename'] . '.' . $val[0]['fileext'] . '" alt="'.$val[0]['title'].'" />';
 				echo '<span class="album_title">' . $menu->slug() . ' (' . self::countPics($menu->id()) . ')</span>';
 				echo '</a>';
 				echo "</li>";
